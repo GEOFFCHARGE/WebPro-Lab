@@ -1,0 +1,48 @@
+@font-face {
+    font-family: myWebFont1;
+    src: url(ChakraPetch-Regular.ttf);
+}
+
+@font-face {
+    font-family: myWebFont2;
+    src: url(Mali-Regular.ttf);
+}
+
+.center {
+    margin: auto;
+    width: 90%;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+    font-size: 24px;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+.bgcolor {
+    background-color: lightgrey;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+td {
+    padding: 2px;
+    border-bottom: black 1px solid;
+}
+
+th {
+    padding: 2px;
+    border-bottom: black 3px solid;
+}
