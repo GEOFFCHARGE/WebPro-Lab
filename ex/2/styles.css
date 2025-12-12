@@ -1,11 +1,11 @@
 @font-face {
     font-family: myWebFont1;
-    src: url(ChakraPetch-Regular.ttf);
+    src: url(fonts/ChakraPetch-Regular.ttf);
 }
 
 @font-face {
     font-family: myWebFont2;
-    src: url(Mali-Regular.ttf);
+    src: url(fonts/Mali-Regular.ttf);
 }
 
 .center {
