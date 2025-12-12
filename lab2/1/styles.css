@@ -1,0 +1,21 @@
+.line {
+    display:flex;
+}
+
+.box {
+    background-color: black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+}
+
+img {
+    height: 180px;
+    width: 300px;
+}
+
+h1 {
+    color: white;
+    margin: 1px;
+}
