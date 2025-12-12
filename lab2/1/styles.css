@@ -1,13 +1,10 @@
-.line {
-    display:flex;
+@font-face {
+    font-family: Prompt;
+    src: url(Prompt-Light.ttf);
 }
 
-.box {
-    background-color: black;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 20px;
-    width: 300px;
+body {
+    font-family: "Prompt", sans-serif;
 }
 
 img {
@@ -15,7 +12,19 @@ img {
     width: 300px;
 }
 
-h1 {
+p {
     color: white;
     margin: 1px;
+    font-size: 24px;
+}
+
+.line {
+    display: flex;
+}
+
+.box {
+    background-color: black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px;
 }
