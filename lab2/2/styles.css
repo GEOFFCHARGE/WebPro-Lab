@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Prompt;
+    src: url(Prompt-Light.ttf);
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    font-size: 24px;
+}
+
+.studentcolumn {
+    width: 270px;
+}
+
+.scorecolumn {
+    width: 300px;
+}
+
+.barchart1 {
+    background-color: gray;
+    padding-left: 5px;
+    width: 98%;
+}
+
+.barchart2 {
+    background-color: blue;
+    padding-left: 5px;
+    width: 85%;
+}
+
+.barchart3 {
+    background-color: green;
+    padding-left: 5px;
+    width: 65%;
+}
+
+.barchart4 {
+    background-color: purple;
+    padding-left: 5px;
+    width: 72%;
+}
+
+.barchart5 {
+    background-color: red;
+    padding-left: 5px;
+    width: 69%;
+}
