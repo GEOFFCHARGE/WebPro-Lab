@@ -7,24 +7,23 @@ body {
     font-family: "Prompt", sans-serif;
 }
 
+table {
+    border-spacing: 10px;
+}
+
+td {
+    background-color: black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 img {
-    height: 180px;
+    height: 170px;
     width: 300px;
 }
 
 p {
     color: white;
-    margin: 1px;
     font-size: 24px;
-}
-
-.line {
-    display: flex;
-}
-
-.box {
-    background-color: black;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 20px;
+    margin: 0px;
 }
