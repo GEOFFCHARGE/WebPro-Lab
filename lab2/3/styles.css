@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Prompt;
+    src: url(Prompt-Light.ttf);
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+}
+
+table {
+    font-size: 24px;
+    text-align: center;
+}
+
+th {
+    width: 60px;
+}
+
+td {
+    border: 2px solid black;
+    height: 45px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.calendar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 850px;
+}
+
+.other {
+    background-color: lightsteelblue;
+    color: red;
+}
