@@ -8,6 +8,10 @@ body {
     font-size: 24px;
 }
 
+table {
+    border-spacing: 10px;
+}
+
 .studentcolumn {
     width: 270px;
 }
