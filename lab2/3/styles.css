@@ -5,6 +5,10 @@
 
 body {
     font-family: "Prompt", sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 750px;
 }
 
 table {
@@ -25,14 +29,7 @@ h1 {
     font-size: 32px;
 }
 
-.calendar {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 850px;
-}
-
 .other {
-    background-color: lightsteelblue;
+    background-color: gray;
     color: red;
 }
