@@ -5,4 +5,36 @@
 
 body {
     font-family: "Prompt", sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+table, td, tr {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+td {
+    width: 100px;
+    padding: 5px;
+}
+
+button {
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 35px;
+    width: 100px;
+}
+
+.gradetable {
+    text-align: center;
 }
