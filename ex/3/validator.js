@@ -5,15 +5,15 @@ function validateForm() {
     let addr = document.getElementById("Address").value;
     let country = document.getElementById("Country").value;
     if (fname.length < 3) {
-        alert("Firstname must be filled out and atleast 3 characters");
+        alert("Firstname must be filled out and at least 3 characters");
         return false;
     }
     if (lname.length < 2) {
-        alert("Lastname must be filled out and atleast 2 characters");
+        alert("Lastname must be filled out and at least 2 characters");
         return false;
     }
     if (addr.length < 10) {
-        alert("Address must be filled out and atleast 10 characters");
+        alert("Address must be filled out and at least 10 characters");
         return false;
     }
     if (country == "00") {
