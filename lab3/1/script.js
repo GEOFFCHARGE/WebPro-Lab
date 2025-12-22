@@ -110,3 +110,25 @@ function validator() {
     }
     return alert("Registration successful");
 }
+
+function showPassword() {
+    let passw = document.getElementById("passw");
+    if (passw.type == "password") {
+        passw.type = "text";
+    }
+    else {
+        passw.type = "password";
+    }
+    return true;
+}
+
+function showConfirm() {
+    let confm = document.getElementById("confm");
+    if (confm.type == "password") {
+        confm.type = "text";
+    }
+    else {
+        confm.type = "password";
+    }
+    return true;
+}
