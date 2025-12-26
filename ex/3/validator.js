@@ -23,12 +23,12 @@ function validateForm() {
 }
 
 /**
-     - การตรวจสอบความยาวของตัวอักษร
-     let str = new String( "This is string" );
-     document.write("str.length is:" + str.length);
-     // str.length is: 14
-     - การหาตำแหน่งข้อความในชุดตัวอักษร
-     let str = "Hello world, welcome to the universe.";
-     let n = str.indexOf("welcome"); 
-     // n = 13
+    - การตรวจสอบความยาวของตัวอักษร
+    let str = new String( "This is string" );
+    document.write("str.length is:" + str.length);
+    // str.length is: 14
+    - การหาตำแหน่งข้อความในชุดตัวอักษร
+    let str = "Hello world, welcome to the universe.";
+    let n = str.indexOf("welcome"); 
+    // n = 13
 */
