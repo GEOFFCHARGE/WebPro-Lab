@@ -1,0 +1,21 @@
+/* 1 */
+/* ul {
+    background-color: aquamarine;
+} */
+
+/* 2 */
+/* body {
+    font-Size : 24px;
+}  
+
+.md1 {
+    border-radius: 25px;
+    border : 10px solid red;
+} */
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
