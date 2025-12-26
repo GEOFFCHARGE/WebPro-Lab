@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Prompt;
+    src: url(Prompt-Light.ttf);
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    display: flex;
+    justify-content: center;
+}
