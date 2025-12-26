@@ -1,4 +1,4 @@
-// 1
+/* 1 */
 /* function listOfMonths() {
     const months = ["January", "February",
                     "March", "April",
@@ -16,7 +16,7 @@
     document.getElementById("pmonths").appendChild(list);
 } */
 
-// 2
+/* 2 */
 /* function addNode() {
     // 1. <p>Java</p>
     let pt4 = document.createElement("p");
@@ -55,7 +55,7 @@ function changeStyles() {
     d.style.fontFamily = "Comic Sans MS";
 } */
 
-// 3
+/* 3 */
 const departments = ['Mathematics', 'Science', 'Language Arts', 'Social Studies'];
 const subjects = [
     ["Calculus", "Physics", "English", "History"],
