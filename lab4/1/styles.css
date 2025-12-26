@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Prompt;
+    src: url(Prompt-Light.ttf);
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td, tr {
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 80px;
+}
+
+input {
+    width: 80px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.info {
+    margin-bottom: 5px;
+}
