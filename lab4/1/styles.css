@@ -9,11 +9,11 @@ body {
     justify-content: center;
 }
 
-thead {
+th {
     font-weight: bold;
 }
 
-td, tr {
+tr, th, td {
     border-bottom: 1px solid black;
     text-align: center;
     width: 80px;
