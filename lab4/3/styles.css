@@ -8,3 +8,70 @@ body {
     display: flex;
     justify-content: center;
 }
+
+input {
+    font-size: 16px;
+    height: 25px;
+}
+
+select {
+    font-size: 16px;
+    height: 30px;
+}
+
+button {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    height: 30px;
+}
+
+table, tr, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    text-align: center;
+}
+
+th {
+    background-color: mediumaquamarine;
+    color: white;
+}
+
+h1, h2, h3 {
+    margin: 5px
+}
+
+.incExp {
+    margin: 20px;
+}
+
+.result {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input {
+    margin-bottom: 30px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+.dateColumn {
+    width: 150px;
+}
+
+.listColumn {
+    width: 270px;
+}
+
+.typeColumn {
+    width: 80px;
+}

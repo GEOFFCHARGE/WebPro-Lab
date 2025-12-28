@@ -7,6 +7,33 @@
     <title>lab4.3</title>
 </head>
 <body>
+    <div class="incExp">
+        <div class="result" id="result">
+            <h2>ตารางรายรับ-รายจ่าย</h2>
+            <h3>ยอดคงเหลือ</h3>
+            <h1 id="remove">0</h1>
+        </div>
+        <div class="input">
+            <input type="text" id="lists" placeholder="รายการ">
+            <input type="number" id="count" placeholder="จำนวน">
+            <select id="type">
+                <option value="inc">รายรับ</option>
+                <option value="exp">รายจ่าย</option>
+            </select>
+            <input type="date" id="date">
+            <button onclick="addItem()">เพิ่มรายการ</button>
+        </div>
+        <div class="table">
+            <table id="table">
+                <tr>
+                    <th class="dateColumn">วันที่</th>
+                    <th class="listColumn">รายการ</th>
+                    <th class="typeColumn">รายรับ</th>
+                    <th class="typeColumn">รายจ่าย</th>
+                </tr>
+            </table>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
