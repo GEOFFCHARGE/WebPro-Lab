@@ -7,3 +7,11 @@ body {
     font-family: "Prompt", sans-serif;
     font-weight: bold;
 }
+
+label {
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 20px;
+}
