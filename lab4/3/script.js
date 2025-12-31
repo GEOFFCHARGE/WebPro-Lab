@@ -27,17 +27,17 @@ function updateBalance(money, type) {
 }
 
 function addItem() {
-    let lists = document.getElementById("lists");
-    let money = document.getElementById("money");
-    let type = document.getElementById("type");
-    let date = document.getElementById("date");
-    if (!lists.value || !money.value || !date.value) {
-        alert("Please fill in all fields");
+    let lists = document.getElementById("lists").value;
+    let money = document.getElementById("money").value;
+    let type = document.getElementById("type").value;
+    let date = document.getElementById("date").value;
+    if (!lists || !money || !date) {
+        alert("ใส่ข้อมูลให้ครบก่อนกดเพิ่มรายการ");
         return 0;
     }
-    addRow(lists.value, money.value, type.value, date.value);
-    updateBalance(money.value, type.value);
-    lists.value = "";
-    money.value = "";
-    date.value = "";
+    addRow(lists, money, type, date);
+    updateBalance(money, type);
+    document.getElementById("lists").value = "";
+    document.getElementById("money").value = "";
+    document.getElementById("date").value = "";
 }
