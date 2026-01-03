@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Prompt;
+    src: url(Prompt-Light.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    padding: 10px;
+}
+
+h1, h3 {
+    margin-top: 0px;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 5px;
+    padding: 15px;
+    width: 23%;
+    min-height: 300px;
+}
+
+.text {
+    min-height: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 100%;
+        min-height: auto;
+    }
+    .text {
+        min-height: auto;
+    }
+}
