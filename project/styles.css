@@ -22,10 +22,10 @@ button {
     background-color: #007acc;
     border: none;
     border-radius: 10px;
-    margin: 15px;
-    padding: 15px;
+    margin-top: 10px;
+    padding: 12px 10px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h1 {
@@ -37,9 +37,16 @@ a {
 }
 
 .header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100vh;
     padding: 50px 20px;
+}
+
+.title {
+    text-align: center;
 }
 
 .section {
@@ -72,12 +79,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     width: 100%;
     padding: 50px 20px;
 }
 
 .credit {
+    text-align: center;
     width: 100%;
     max-width: 800px;
 }

@@ -47,14 +47,14 @@ function changeColor(theme) {
 }
 
 function changeButton(text) {
-    let header = document.getElementById("header");
-    header.removeChild(header.lastElementChild);
+    let title = document.getElementById("title");
+    title.removeChild(title.lastElementChild);
     let button = document.createElement("button");
     let txt = document.createTextNode(text);
     button.append(txt);
     button.setAttribute("id", "button");
     button.setAttribute("onclick", "changeTheme()");
-    header.appendChild(button);
+    title.appendChild(button);
 }
 
 function changeTheme() {
