@@ -8,7 +8,6 @@ function getTheme() {
 function setTheme(theme) {
     localStorage.setItem("theme", theme);
     changeColor(theme);
-    changeButton(theme == "light" ? "โหมดกลางคืน": "โหมดกลางวัน");
 }
 
 function changeColor(theme) {
@@ -20,41 +19,23 @@ function changeColor(theme) {
     let li = document.querySelectorAll("li");
     let color1 = document.querySelectorAll(".color1");
     let color2 = document.querySelectorAll(".color2");
-    h1.forEach(function (node) {
-        node.style.color = theme == "light" ? "#000000": "#ffffff";
-    });
-    h2.forEach(function (node) {
-        node.style.color = theme == "light" ? "#000000": "#ffffff";
-    });
-    h3.forEach(function (node) {
-        node.style.color = theme == "light" ? "#000000": "#ffffff";
-    });
-    p.forEach(function (node) {
-        node.style.color = theme == "light" ? "#000000": "#ffffff";
-    });
-    a.forEach(function (node) {
-        node.style.color = theme == "light" ? "#000000": "#ffffff";
-    });
-    li.forEach(function (node) {
-        node.style.color = theme == "light" ? "#000000": "#ffffff";
+    let textColor = [h1, h2, h3, p, a, li];
+    textColor.forEach(function (tag) {
+        tag.forEach(function (node) {
+            node.style.color = theme == "light" ? "#000000": "#ffffff";
+        });
     });
     color1.forEach(function (node) {
-        node.style.backgroundColor = theme == "light" ? "#ffffff": "#1e1e1e";
+        node.style.backgroundColor = theme == "light" ? "#f5f5f5": "#252526";
     });
     color2.forEach(function (node) {
-        node.style.backgroundColor = theme == "light" ? "#fafafa": "#252526";
+        node.style.backgroundColor = theme == "light" ? "#f9f9f9": "#1e1e1e";
     });
+    changeButton(theme == "light" ? "โหมดมืด": "โหมดสว่าง");
 }
 
 function changeButton(text) {
-    let title = document.getElementById("title");
-    title.removeChild(title.lastElementChild);
-    let button = document.createElement("button");
-    let txt = document.createTextNode(text);
-    button.append(txt);
-    button.setAttribute("id", "button");
-    button.setAttribute("onclick", "changeTheme()");
-    title.appendChild(button);
+    document.getElementById("button").innerText = text;
 }
 
 function changeTheme() {
