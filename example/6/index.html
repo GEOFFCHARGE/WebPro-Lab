@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>lab6.ex</title>
+</head>
+<body>
+    <!-- 1 -->
+    <!-- <p id="out"></p> -->
+    <!-- 2ab -->
+    <!-- <div id="div1"></div> -->
+    <!-- 2c -->
+    <!-- <div class="div2">
+        <h1>Order Details</h1>
+        <h2>Order ID: <span id="id"></span></h2>
+        <h2>Order Date: <span id="date"></span></h2>
+        <h2>Customer: <span id="cust"></span></h2>
+        <h2>Email: <span id="mail"></span></h2>
+        <table id="tb">
+            <th>
+                <tr>ID</tr>
+                <tr>Product</tr>
+                <tr>Quantity</tr>
+                <tr>Price</tr>
+                <tr>Total</tr>
+            </th>
+        </table>
+        <h1>Shipping</h1>
+        <h2>address: <span id="ship"></span></h2>
+    </div> -->
+    <!-- 3 -->
+    <form id="myForm">
+        <div><label for='FirstName'>First Name:</label>
+            <input type="text" id="FirstName" name="FirstName" />
+        </div>
+        <div><label for='LastName'>Last Name:</label>
+            <input type="text" id="LastName" name="LastName" />
+        </div>
+        <div><label for='Country'>Country:</label>
+            <select id="Country" name="Country">
+                <option value="000" selected="selected">-Select-</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Laos">Laos</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Indonesia">Indonesia</option>
+            </select>
+        </div>
+    </form>
+<button onclick="SaveForm()">Save data</button>
+<button onclick="LoadData()">Show data</button>
+    <script src="script.js"></script>
+</body>
+</html>
