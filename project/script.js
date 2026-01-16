@@ -19,6 +19,7 @@ function changeColor(theme) {
     let li = document.querySelectorAll("li");
     let color1 = document.querySelectorAll(".color1");
     let color2 = document.querySelectorAll(".color2");
+    let badge = document.querySelectorAll(".badge");
     let textColor = [h1, h2, h3, p, a, li];
     textColor.forEach(function (tag) {
         tag.forEach(function (node) {
@@ -30,6 +31,9 @@ function changeColor(theme) {
     });
     color2.forEach(function (node) {
         node.style.backgroundColor = theme == "light" ? "#f9f9f9": "#1e1e1e";
+    });
+    badge.forEach(function (node) {
+        node.style.color = theme == "light" ? "#ffffff": "#000000";
     });
     changeButton(theme == "light" ? "โหมดมืด": "โหมดสว่าง");
 }
