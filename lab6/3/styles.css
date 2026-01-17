@@ -1,0 +1,20 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "GoogleSans", sans-serif;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+}
