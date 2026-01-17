@@ -1,0 +1,39 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "GoogleSans", sans-serif;
+}
+
+img {
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 20px;
+    float: left;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
