@@ -1,0 +1,32 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "GoogleSans", sans-serif;
+}
+
+table, th, td, tr {
+    border-collapse: collapse;
+    height: 40px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th, td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+th {
+    background-color: lightcyan;
+}
+
+.detail {
+    font-weight: normal;
+}
