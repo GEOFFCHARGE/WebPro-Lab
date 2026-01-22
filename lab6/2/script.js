@@ -4,7 +4,7 @@ function students(data) {
         let div = document.createElement("div");
         div.setAttribute("class", "card");
         let img = document.createElement("img");
-        img.setAttribute("src", student.gender == "Male" ? "images/male.png": "images/female.png");
+        img.setAttribute("src", student.gender == "Male" ? "images/img_male.png": "images/img_female.png");
         let h2 = document.createElement("h2");
         let p1 = document.createElement("p");
         let p2 = document.createElement("p");
