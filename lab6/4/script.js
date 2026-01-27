@@ -5,12 +5,14 @@ displayItem();
 
 function addItem() {
     let input = document.getElementById("input");
-    let movies = JSON.parse(localStorage.getItem("movies")) || {};
-    movies[count] = input.value;
-    localStorage.setItem("movies", JSON.stringify(movies));
-    localStorage.setItem("count", ++count);
-    input.value = "";
-    displayItem();
+    if (input.value) {
+        let movies = JSON.parse(localStorage.getItem("movies")) || {};
+        movies[count] = input.value;
+        localStorage.setItem("movies", JSON.stringify(movies));
+        localStorage.setItem("count", ++count);
+        input.value = "";
+        displayItem();
+    }
 }
 
 function removeItem(id) {
