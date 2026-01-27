@@ -13,7 +13,7 @@ body {
 
 table, th, td, tr {
     border-collapse: collapse;
-    height: 40px;
+    height: 50px;
     text-align: left;
     border: 1px solid black;
 }
