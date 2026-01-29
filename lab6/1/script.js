@@ -1,6 +1,4 @@
 function employees(data) {
-    let count = 1;
-    let table = document.getElementById("table");
     data.forEach(employee => {
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
@@ -23,8 +21,8 @@ function employees(data) {
         tr.appendChild(td3);
         tr.appendChild(td4);
         tr.appendChild(td5);
-        count++ % 2 ? tr.setAttribute("class", "odd"): tr.setAttribute("class", "even");
-        table.appendChild(tr);
+        employee.id % 2 ? tr.setAttribute("class", "odd"): tr.setAttribute("class", "even");
+        document.getElementById("table").appendChild(tr);
     });
 }
 
