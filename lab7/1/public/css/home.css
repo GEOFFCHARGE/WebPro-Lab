@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Prompt;
+    src: url(../font/Prompt-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #333333;
+}
+
+.navbar a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    background-color: green;
+    margin-left: auto;
+}
+
+.describe {
+    margin: 10px;
+}
+
+.panda {
+    width: 400px;
+    margin: 20px;
+}
