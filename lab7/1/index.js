@@ -9,7 +9,6 @@ app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "public/html/home.html"));
 });
 
-
 app.get("/dog", function (req, res) {
     res.sendFile(path.join(__dirname, "public/html/dog.html"));
 });
