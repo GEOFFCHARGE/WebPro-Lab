@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: Prompt;
+            src: url(../public/font/Prompt-Regular.ttf);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Prompt", sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .box {
+            margin: 20px;
+        }
+
+        table, th, td, tr {
+            border-collapse: collapse;
+            height: 50px;
+            text-align: left;
+            border: 1px solid grey;
+        }
+
+        table {
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        th {
+            background-color: lightcyan;
+        }
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: #0d6efd;
+        }
+    </style>
+    <title>lab8.2</title>
+</head>
+<body>
+    <div class="box">
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td><%= data.username %></td>
+                <td><%= data.password %></td>
+                <td><%= data.email %></td>
+                <td><%= data.firstname %></td>
+                <td><%= data.lastname %></td>
+                <td><%= data.age %></td>
+                <td><%= data.address %></td>
+                <td><%= data.phone %></td>
+            </tr>
+        </table>
+        <a href="/">Back to Sign-in</a>
+    </div>
+</body>
+</html>
