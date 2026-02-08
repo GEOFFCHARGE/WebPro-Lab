@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Prompt;
+    src: url(../font/Prompt-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.box {
+    width: 100%;
+    max-width: 500px;
+}
+
+.box a {
+    text-align: center;
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+.btn {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    background-color: #198754;
+    padding: 10px;
+    font-size: 16px;
+}
