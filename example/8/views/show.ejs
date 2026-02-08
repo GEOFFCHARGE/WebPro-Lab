@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8.ex</title>
+    <style>
+        table, th, td, tr {
+            border-collapse: collapse;
+            height: 50px;
+            text-align: left;
+            border: 1px solid black;
+        }
+        th, td {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        th {
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- EJS Syntax -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+        <% data.forEach((item)=> { %>
+        <tr>
+            <td><%= item.ID %></td>
+            <td><%= item.NAME %></td>
+            <td><%= item.DEPT_NAME %></td>
+            <td><%= item.SALARY %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
