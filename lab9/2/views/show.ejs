@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<%- include("head") %>
+<body>
+    <h1>Questions</h1>
+    <form action="/formget" method="GET">
+        <% data.forEach((item)=>{ %>
+        <div>
+            <h2><%= item.QID %>. <%= item.Stem %></h2>
+            <input type="radio" id="<%= item.QID %>-1" name="<%= item.QID %>" value="A" required>
+            <label for="<%= item.QID %>-1"><%= item.Alt_A %></label><br>
+            <input type="radio" id="<%= item.QID %>-2" name="<%= item.QID %>" value="B" required>
+            <label for="<%= item.QID %>-2"><%= item.Alt_B %></label><br>
+            <input type="radio" id="<%= item.QID %>-3" name="<%= item.QID %>" value="C" required>
+            <label for="<%= item.QID %>-3"><%= item.Alt_C %></label><br>
+            <input type="radio" id="<%= item.QID %>-4" name="<%= item.QID %>" value="D" required>
+            <label for="<%= item.QID %>-4"><%= item.Alt_D %></label>
+        </div>
+        <% }); %>
+        <br><hr>
+        <input class="btn" type="submit">
+    </form>
+</body>
+</html>
