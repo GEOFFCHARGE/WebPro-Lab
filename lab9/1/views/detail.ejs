@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<%- include("head") %>
+<body>
+    <h1>User Details</h1>
+    <div class="detail">
+        <p><a class="topic">ID: </a><%= data.id %></p>
+        <p><a class="topic">First Name: </a><%= data.first_name %></p>
+        <p><a class="topic">Last Name: </a><%= data.last_name %></p>
+        <p><a class="topic">Username: </a><%= data.username %></p>
+        <p><a class="topic">Email: </a><%= data.email %></p>
+    </div>
+    <a href="/">Back to Users List</a>
+</body>
+</html>
