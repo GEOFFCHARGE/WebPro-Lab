@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 app.get("/formget", (req, res) => {
     let score = 0;
     let total = 0;
-    let selects = req.query;
+    let select = req.query;
     let sql = `SELECT QID, Correct FROM questions`;
     db.all(sql, (err, rows) => {
         if (err) {
@@ -36,7 +36,7 @@ app.get("/formget", (req, res) => {
             return;
         }
         rows.forEach((row) => {
-            if (selects[row.QID] === row.Correct) {
+            if (select[row.QID] == row.Correct) {
                 score++;
             }
             total++;
