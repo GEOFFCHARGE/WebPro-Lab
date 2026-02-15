@@ -20,7 +20,6 @@ app.get("/", (req, res) => {
         if (err) {
             console.log(err.message);
         }
-        console.log(rows);
         res.render("list", { data: rows });
     });
 });
@@ -30,8 +29,8 @@ app.get("/detail/:id", (req, res) => {
     db.all(sql, (err, row) => {
         if (err) {
             console.log(err.message);
+            return;
         }
-        console.log(row);
         res.render("detail", { data : row[0] });
     });
 });
