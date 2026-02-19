@@ -27,9 +27,8 @@ app.get("/", (req, res) => {
 
 app.get("/formget", (req, res) => {
     let score = 0;
-    let total = 0;
     let select = req.query;
-    let sql = `SELECT QID, Correct FROM questions`;
+    let sql = `SELECT * FROM questions`;
     db.all(sql, (err, rows) => {
         if (err) {
             console.log(err.message);
@@ -39,9 +38,8 @@ app.get("/formget", (req, res) => {
             if (select[row.QID] == row.Correct) {
                 score++;
             }
-            total++;
         });
-        res.render("score", { data: [score, total] });
+        res.render("result", { score: score, total: rows.length, question: rows, select: select });
     });
 });
 

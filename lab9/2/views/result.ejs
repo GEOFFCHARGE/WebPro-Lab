@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<%- include("head") %>
+<body>
+    <div class="container my-3">
+        <p class="h1">Results</p>
+        <p class="h4">You got <strong class="<%- score == total ? 'text-success' : 'text-danger' %>"><%= score %></strong> out of <strong class="text-success"><%= total %></strong> correct</p>
+        <hr>
+        <% question.forEach((item) => { %>
+        <% let check = (select[item.QID] == item.Correct); %>
+        <div class="my-3">
+            <p class="h2"><%= item.QID %>. <%= item.Stem %></p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="<%= item.QID %>A" name="<%= item.QID %>" value="A" <%- (select[item.QID] == "A") ? "checked disabled" : "disabled" %>>
+                <label class="form-check-label <%- (select[item.QID] == 'A') ? (check) ? 'text-success': 'text-danger' : (item.Correct == 'A') ? 'text-success': '' %>" for="<%= item.QID %>A"><%= item.Alt_A %></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="<%= item.QID %>B" name="<%= item.QID %>" value="B" <%- (select[item.QID] == "B") ? "checked disabled" : "disabled" %>>
+                <label class="form-check-label <%- (select[item.QID] == 'B') ? (check) ? 'text-success': 'text-danger' : (item.Correct == 'B') ? 'text-success': '' %>" for="<%= item.QID %>B"><%= item.Alt_B %></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="<%= item.QID %>C" name="<%= item.QID %>" value="C" <%- (select[item.QID] == "C") ? "checked disabled" : "disabled" %>>
+                <label class="form-check-label <%- (select[item.QID] == 'C') ? (check) ? 'text-success': 'text-danger' : (item.Correct == 'C') ? 'text-success': '' %>" for="<%= item.QID %>C"><%= item.Alt_C %></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="<%= item.QID %>D" name="<%= item.QID %>" value="D" <%- (select[item.QID] == "D") ? "checked disabled" : "disabled" %>>
+                <label class="form-check-label <%- (select[item.QID] == 'D') ? (check) ? 'text-success': 'text-danger' : (item.Correct == 'D') ? 'text-success': '' %>" for="<%= item.QID %>D"><%= item.Alt_D %></label>
+            </div>
+        </div>
+        <% }); %>
+        <hr>
+        <a href="/" class="btn btn-primary">return</a>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
