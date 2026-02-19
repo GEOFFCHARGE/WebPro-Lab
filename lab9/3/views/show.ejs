@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<%- include("head") %>
+<body>
+    <h1>📦 ระบบติดตามคำสั่งซื้อ</h1>
+    <form action="/insert" method="get">
+        <input type="text" name="customer" placeholder="ชื่อลูกค้า" required>
+        <input type="text" name="product" placeholder="รายการสินค้า" required>
+        <input type="text" name="address" placeholder="ที่อยู่" required>
+        <input type="text" name="phone" placeholder="เบอร์โทร" required>
+        <input class="button green" type="submit" value="เพิ่มคำสั่งซื้อ">
+    </form>
+    <hr>
+    <h1>รายการคำสั่งซื้อ</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>ลูกค้า</th>
+            <th>สินค้า</th>
+            <th>สถานะ</th>
+            <th>เปลี่ยนสถานะ</th>
+        </tr>
+        <% data.forEach((item) => { %>
+        <tr>
+            <td><%= item.id %></td>
+            <td><%= item.customer %></td>
+            <td><%= item.product %></td>
+            <td><%= item.status %></td>
+            <td>
+                <form action="/update/<%= item.id %>" method="get">
+                    <select id="status<%= item.id %>" name="status">
+                        <option value="รอดำเนินการ" <% if (item.status == "รอดำเนินการ") { %> selected <% } %>>รอดำเนินการ</option>
+                        <option value="กำลังจัดส่ง" <% if (item.status == "กำลังจัดส่ง") { %> selected <% } %>>กำลังจัดส่ง</option>
+                        <option value="จัดส่งแล้ว" <% if (item.status == "จัดส่งแล้ว") { %> selected <% } %>>จัดส่งแล้ว</option>
+                        <option value="ยกเลิก" <% if (item.status == "ยกเลิก") { %> selected <% } %>>ยกเลิก</option>
+                    </select>
+                    <input class="button blue" type="submit" value="อัปเดต">
+                </form>
+            </td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
