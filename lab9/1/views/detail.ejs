@@ -2,14 +2,17 @@
 <html lang="en">
 <%- include("head") %>
 <body>
-    <h1>User Details</h1>
-    <div class="detail">
-        <p><a class="topic">ID: </a><%= data.id %></p>
-        <p><a class="topic">First Name: </a><%= data.first_name %></p>
-        <p><a class="topic">Last Name: </a><%= data.last_name %></p>
-        <p><a class="topic">Username: </a><%= data.username %></p>
-        <p><a class="topic">Email: </a><%= data.email %></p>
+    <div class="container p-3">
+        <p class="h1">User Details</p>
+        <div class="container p-3">
+            <p><strong>ID:</strong> <%= data.id %></p>
+            <p><strong>First Name:</strong> <%= data.first_name %></p>
+            <p><strong>Last Name:</strong> <%= data.last_name %></p>
+            <p><strong>Username:</strong> <%= data.username %></p>
+            <p><strong>Email:</strong> <%= data.email %></p>
+        </div>
+        <a href="/" class="btn btn-link">Back to Users List
     </div>
-    <a href="/">Back to Users List</a>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

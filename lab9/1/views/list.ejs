@@ -2,26 +2,33 @@
 <html lang="en">
 <%- include("head") %>
 <body>
-    <h1>Users List</h1>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Action</th>
-        </tr>
-        <% data.forEach((item) => { %>
-        <tr>
-            <td><%= item.id %></td>
-            <td><%= item.first_name %></td>
-            <td><%= item.last_name %></td>
-            <td><%= item.username %></td>
-            <td><%= item.email %></td>
-            <td><a href="/detail/<%= item.id %>" class="button">Detail</a></td>
-        </tr>
-        <% }); %>
-    </table>
+    <div class="container p-3">
+        <div class="container ps-3 pb-3">
+            <p class="h1">Users List</p>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered border-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+                <% data.forEach((item) => { %>
+                <tr class="align-baseline">
+                    <td><%= item.id %></td>
+                    <td><%= item.first_name %></td>
+                    <td><%= item.last_name %></td>
+                    <td><%= item.username %></td>
+                    <td><%= item.email %></td>
+                    <td><a href="/detail/<%= item.id %>" class="btn btn-dark">Detail</a></td>
+                </tr>
+                <% }); %>
+            </table>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

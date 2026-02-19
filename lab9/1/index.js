@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     let sql = `SELECT * FROM users`;
     db.all(sql, (err, rows) => {
         if (err) {
-            console.log(err.message);
+            return console.error(err.message);
         }
         res.render("list", { data: rows });
     });
@@ -28,8 +28,7 @@ app.get("/detail/:id", (req, res) => {
     let sql = `SELECT * FROM users WHERE id = ${req.params.id};`;
     db.all(sql, (err, row) => {
         if (err) {
-            console.log(err.message);
-            return;
+            return console.error(err.message);
         }
         res.render("detail", { data : row[0] });
     });
