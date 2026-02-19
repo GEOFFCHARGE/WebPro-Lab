@@ -26,15 +26,13 @@ app.get("/", (req, res) => {
     );`;
     db.run(sqlCreate, (err, rows) => {
         if (err) {
-            console.log(err.message);
-            return;
+            return console.log(err.message);
         }
     });
     let sqlSelect = `SELECT id, customer, product, status FROM invoices;`;
     db.all(sqlSelect, (err, rows) => {
         if (err) {
-            console.log(err.message);
-            return;
+            return console.log(err.message);
         }
         res.render("show", { data: rows });
     });
@@ -45,8 +43,7 @@ app.get("/insert", (req, res) => {
     let sqlInsert = `INSERT INTO invoices (customer, product, address, phone) VALUES (?, ?, ?, ?);`;
     db.run(sqlInsert, [customer, product, address, phone], (err, rows) => {
         if (err) {
-            console.log(err.message);
-            return;
+            return console.log(err.message);
         }
         res.redirect("/");
     });
@@ -56,8 +53,7 @@ app.get("/update/:id", (req, res) => {
     let sqlSelect = `UPDATE invoices SET status = ? WHERE id = ?;`;
     db.all(sqlSelect, [req.query.status, req.params.id], (err, rows) => {
         if (err) {
-            console.log(err.message);
-            return;
+            return console.log(err.message);
         }
         res.redirect("/");
     });

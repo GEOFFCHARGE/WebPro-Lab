@@ -27,12 +27,12 @@
             <td><%= item.product %></td>
             <td><%= item.status %></td>
             <td>
-                <form action="/update/<%= item.id %>" method="get">
+                <form action="/update/<%= item.id %>" method="GET">
                     <select id="status<%= item.id %>" name="status">
-                        <option value="รอดำเนินการ" <% if (item.status == "รอดำเนินการ") { %> selected <% } %>>รอดำเนินการ</option>
-                        <option value="กำลังจัดส่ง" <% if (item.status == "กำลังจัดส่ง") { %> selected <% } %>>กำลังจัดส่ง</option>
-                        <option value="จัดส่งแล้ว" <% if (item.status == "จัดส่งแล้ว") { %> selected <% } %>>จัดส่งแล้ว</option>
-                        <option value="ยกเลิก" <% if (item.status == "ยกเลิก") { %> selected <% } %>>ยกเลิก</option>
+                        <option value="รอดำเนินการ" <%- (item.status == "รอดำเนินการ") ? "selected" : "" %>>รอดำเนินการ</option>
+                        <option value="กำลังจัดส่ง" <%- (item.status == "กำลังจัดส่ง") ? "selected" : "" %>>กำลังจัดส่ง</option>
+                        <option value="จัดส่งแล้ว" <%- (item.status == "จัดส่งแล้ว") ? "selected" : "" %>>จัดส่งแล้ว</option>
+                        <option value="ยกเลิก" <%- (item.status == "ยกเลิก") ? "selected" : "" %>>ยกเลิก</option>
                     </select>
                     <input class="button blue" type="submit" value="อัปเดต">
                 </form>
