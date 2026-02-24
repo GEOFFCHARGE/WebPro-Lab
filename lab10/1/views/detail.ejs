@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detail.css">
+    <title>lab10.1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Product <%= data.product_id %> Detail</h1>
+            <img src="<%= data.image_url %>">
+            <h2><%= data.name %></h2>
+            <small><%= data.description %></small>
+            <p>Price : <%= data.price %></p>
+            <p>Amount : <%= data.quantity %></p>
+            <a href="/">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>

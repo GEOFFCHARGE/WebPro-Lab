@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/show.css">
+    <title>lab10.1</title>
+</head>
+<body>
+    <h1>My Products</h1>
+    <div class="container">
+        <% data.forEach((item) => { %>
+        <div class="card">
+            <img src="<%= item.image_url %>">
+            <div class="context">
+                <h2><%= item.name %></h2>
+                <p><%= item.description %></p>
+                <a href="/detail/<%= item.product_id %>">Detail</a>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</body>
+</html>
