@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
         .then(response => response.json())
         .then(wsdata => {
             console.log(wsdata);
-            res.render("show", { data: wsdata });            
+            res.render("show", { data: wsdata });
         })
         .catch(error => {
             console.log(error);
