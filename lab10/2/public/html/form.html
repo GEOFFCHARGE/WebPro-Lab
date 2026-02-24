@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>lab10.2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Create a New Todo</h1>
+            <form action="/create" method="GET">
+                <label for="title">Title:</label><br>
+                <input class="input" type="text" id="title" name="title" placeholder="Enter title" required><br>
+                <label for="description">Description:</label><br>
+                <textarea class="input" type="text" id="description" name="description" placeholder="Enter description" rows="4" required></textarea><br>
+                <label for="deadline">Deadline:</label><br>
+                <input  class="input"type="date" id="deadline" name="deadline" required><br><br>
+                <input class="btn" type="submit" value="Create Todo">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
