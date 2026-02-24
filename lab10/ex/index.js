@@ -74,7 +74,7 @@ app.get('/smartphones', (req, res) => {
             console.log(err.message);
         }
         console.log(rows);
-        res.send(JSON.stringify(rows));        
+        res.send(JSON.stringify(rows));
     });
 });
 
