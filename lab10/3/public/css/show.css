@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Prompt;
+    src: url(/font/Prompt-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table, tr, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px 10px;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+.odd {
+    background-color: lightgrey;
+}
+
+.even {
+    background-color: whitesmoke;
+}
