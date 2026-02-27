@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/cart.css">
+	<title>lab10.ex</title>
+</head>
+<body>
+	<h1>Your cart</h1>
+    <%- include("navbar") %>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Price</th>
+        </tr>
+        <% let sum = 0; %>
+        <% data.forEach((item, i) => { %>
+        <tr>
+            <td><%= i + 1 %></td>
+            <td><%= item.name %></td>
+            <td>1</td>
+            <td><%= item.price %></td>
+            <% sum += item.price; %>
+        </tr>
+        <% }) %>
+    </table>
+    <p>Total: <%= sum %></p>
+    <a class="btn" href="/clear-cart">Clear cart</a>
+</body>
+</html>

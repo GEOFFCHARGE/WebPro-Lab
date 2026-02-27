@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/showproducts.css">
+    <title>lab11.ex</title>
+</head>
+<body>
+    <h1>Phones Store Shop</h1>
+    <%- include("navbar") %>
+    <div class="container">
+        <% data.forEach((item) => { %>
+        <div class="card">
+            <img src="http://webdev.it.kmitl.ac.th/phone-images/<%= item.pimage %>">
+            <div class="context">
+                <p><%= item.name %> - USD <%= item.price %></p>
+                <a class="btn" href="/add-to-cart/<%= item.id %>">Add to cart</a>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</body>
+</html>
