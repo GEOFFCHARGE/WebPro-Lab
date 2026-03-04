@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>lab11.1</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Information</h1>
+        <form method="get">
+            <label for="CustomerId">Employee ID:</label><br>
+            <input class="input" type="text" id="CustomerId" name="CustomerId" value="<%= data.CustomerId || '' %>">
+            <label for="FirstName">Firstname:</label><br>
+            <input class="input" type="text" id="FirstName" name="FirstName" value="<%= data.FirstName || '' %>">
+            <label for="LastName">Lastname:</label><br>
+            <input class="input" type="text" id="LastName" name="LastName" value="<%= data.LastName || '' %>">
+            <label for="Address">Address:</label><br>
+            <textarea class="input" id="Address" name="Address" rows="2"><%= data.Address || '' %></textarea>
+            <label for="Email">Email:</label><br>
+            <input class="input" type="text" id="Email" name="Email" value="<%= data.Email || '' %>">
+            <label for="Phone">Phone:</label><br>
+            <input class="input" type="text" id="Phone" name="Phone" value="<%= data.Phone || '' %>">
+            <input type="submit" formaction="/set-cookie" value="Save Data">
+            <input type="submit" formaction="/get-cookie" value="Show Data">
+            <input type="submit" formaction="/clear-cookie" value="Clear Data">
+        </form>
+    </div>
+</body>
+</html>
