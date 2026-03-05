@@ -46,6 +46,14 @@ th {
     background-color: lightgrey;
 }
 
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
 .interact {
     text-align: center;
 }

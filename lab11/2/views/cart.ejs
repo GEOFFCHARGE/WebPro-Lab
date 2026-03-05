@@ -21,10 +21,10 @@
             <% let total = 0; %>
             <% data.forEach((item, i) => { %>
             <tr class="<%= (i + 1) % 2 ? 'odd': 'even' %>">
-                <td><%= i + 1 %></td>
+                <td class="center"><%= i + 1 %></td>
                 <td><%= item.name %></td>
-                <td>1</td>
-                <td><%= item.price %></td>
+                <td class="center">1</td>
+                <td class="right"><%= item.price %></td>
             </tr>
             <% total += item.price; %>
             <% }) %>
