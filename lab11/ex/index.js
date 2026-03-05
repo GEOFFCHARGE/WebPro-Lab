@@ -183,7 +183,6 @@ app.get('/add-to-cart/:item', (req, res) => {
 app.get('/cart', (req, res) => {
     const cart = req.session.cart || [];
     console.log(`List in your cart: ${cart.join(', ')}`);
-
     db.serialize(() => {
         const query = `SELECT * FROM phones WHERE id IN (${cart.join(', ')})`;
         db.all(query, (err, rows) => {
