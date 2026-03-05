@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <title>lab11.2</title>
+</head>
+<body>
+    <%- include("navbar") %>
+    <h1>AUNTIE-AUN Restaurant</h1>
+    <div class="container">
+        <% data.forEach((item) => { %>
+        <div class="card">
+            <img src="<%= item.image_url %>">
+            <div class="content">
+                <h3><%= item.name %></h3>
+                <p><%= item.description %></p>
+                <div class="interact">
+                    <p class="price"><%= item.price %> THB</p>
+                    <a class="button" href="/add-to-cart/<%= item.product_id %>">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</body>
+</html>

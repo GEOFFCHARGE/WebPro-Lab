@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <title>lab11.2</title>
+</head>
+<body>
+    <%- include("navbar") %>
+    <h1>List of items</h1>
+    <div class="container">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>
+            <% let total = 0; %>
+            <% data.forEach((item, i) => { %>
+            <tr class="<%= (i + 1) % 2 ? 'odd': 'even' %>">
+                <td><%= i + 1 %></td>
+                <td><%= item.name %></td>
+                <td>1</td>
+                <td><%= item.price %></td>
+            </tr>
+            <% total += item.price; %>
+            <% }) %>
+        </table>
+        <div class="interact">
+            <h3 class="price">total price : <%= total %> THB</h3>
+            <a class="button" href="/clear-cart">Confirm Order</a>
+        </div>
+    </div>
+</body>
+</html>
